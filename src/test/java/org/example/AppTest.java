@@ -19,14 +19,14 @@ public class AppTest
      */
 
     @Autowired
-    Addition addition;
+    Calci calci;
 
     @Test
     public void AddTwoNumbers()
     {
         long a=4,b=6;
         long expectedSum = 10;
-        long actualSum = addition.addNumbers(4,6);
+        long actualSum = calci.add(4,6);
         assertEquals(expectedSum, actualSum);
 
     }
