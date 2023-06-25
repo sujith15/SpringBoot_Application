@@ -65,6 +65,11 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+          <configuration>
+            <includes>
+              <include>*Test.java</include>
+            </includes>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
@@ -91,10 +96,16 @@
         <plugin>
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
-          <configuration>
-            <mainClass>org.springboot.app.Main</mainClass>
-          </configuration>
+          <executions>
+            <execution>
+              <configuration>
+                <mainClass>org.example.App</mainClass>
+              </configuration>
+            </execution>
+          </executions>
         </plugin>
+
+
 
       </plugins>
     </pluginManagement>
