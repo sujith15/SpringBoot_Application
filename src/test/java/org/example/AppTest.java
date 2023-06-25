@@ -16,7 +16,7 @@ public class AppTest
      * Rigorous Test :-)
      */
 
-    Calci calci = new Calci();
+    Addition calci = new Addition();
 
     @Test
     public void AddTwoNumbers()
