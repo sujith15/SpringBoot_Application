@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
  */
 
 @SpringBootTest
-public class AppTest
+public class AdditionTest
 {
     /**
      * Rigorous Test :-)

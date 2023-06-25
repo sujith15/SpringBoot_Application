@@ -3,6 +3,15 @@ package org.example;
 public class TwoNumbers {
 
     private long num1;
+
+    public void setNum1(long num1) {
+        this.num1 = num1;
+    }
+
+    public void setNum2(long num2) {
+        this.num2 = num2;
+    }
+
     private long num2;
 
     public long getNum1() {
